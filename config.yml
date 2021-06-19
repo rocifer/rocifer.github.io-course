@@ -1,0 +1,16 @@
+title: rocifer.github.io
+description: 栾宝！
+template:
+  repo: rocifer.github.io-template
+  name: rocifer.github.io
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
